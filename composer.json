@@ -1,0 +1,56 @@
+{
+    "name": "getpop/definitionpersistence",
+    "type": "library",
+    "description": "Adds support for user meta",
+    "keywords": [
+        "PoP",
+        "definitionpersistence"
+    ],
+    "homepage": "https://github.com/getpop/definitionpersistence",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leonardo Losoviz",
+            "email": "leo@getpop.org",
+            "homepage": "https://getpop.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php" : "~7.1",
+        "getpop/meta": "dev-master",
+        "getpop/users": "dev-master",
+        "getpop/migrate-definitionpersistence": "^1.0@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : ">=7.0",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PoP\\DefinitionPersistence\\": "src"
+        },
+        "files": [
+            "initialize.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PoP\\DefinitionPersistence\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
