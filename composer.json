@@ -19,8 +19,7 @@
     "prefer-stable": true,
     "require": {
         "php" : "~7.1",
-        "getpop/meta": "dev-master",
-        "getpop/users": "dev-master",
+        "getpop/definitions": "^1.0@dev",
         "getpop/migrate-definitionpersistence": "^1.0@dev"
     },
     "require-dev": {
