@@ -8,13 +8,15 @@ use PoP\Definitions\Definitions\AbstractDefinitionPersistence;
 class FileDefinitionPersistence extends AbstractDefinitionPersistence
 {
     protected $file;
+    protected $fileStore;
+
     public function __construct(
         FileStoreInterface $fileStore,
         AbstractFile $file
     ) {
-        parent::__construct();
         $this->fileStore = $fileStore;
         $this->file = $file;
+        parent::__construct();
     }
 
     protected function getPersistedData(): array

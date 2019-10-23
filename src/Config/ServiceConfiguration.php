@@ -13,7 +13,7 @@ class ServiceConfiguration
         // Add ModuleFilter to the ModuleFilterManager
         ContainerBuilderUtils::injectServiceIntoService(
             'definition_manager',
-            'definition_persistence',
+            'file_definition_persistence',
             'setDefinitionPersistence'
         );
     }

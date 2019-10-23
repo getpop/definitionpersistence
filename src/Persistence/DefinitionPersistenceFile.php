@@ -1,4 +1,6 @@
 <?php
+namespace PoP\DefinitionPersistence\Persistence;
+
 use PoP\FileStore\File\AbstractFile;
 use PoP\DefinitionPersistence\Component;
 
