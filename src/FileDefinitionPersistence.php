@@ -1,9 +1,9 @@
 <?php
-namespace PoP\DefinitionPersistence\Persistence;
+namespace PoP\DefinitionPersistence;
 
 use PoP\FileStore\File\AbstractFile;
 use PoP\FileStore\Store\FileStoreInterface;
-use PoP\Definitions\Definitions\AbstractDefinitionPersistence;
+use PoP\Definitions\AbstractDefinitionPersistence;
 
 class FileDefinitionPersistence extends AbstractDefinitionPersistence
 {
