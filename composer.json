@@ -20,6 +20,7 @@
     "require": {
         "php" : "~7.1",
         "getpop/definitions": "^1.0@dev",
+        "getpop/filestore": "^1.0@dev",
         "getpop/migrate-definitionpersistence": "^1.0@dev"
     },
     "require-dev": {
