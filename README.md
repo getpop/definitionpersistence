@@ -9,8 +9,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 -->
 
-Adds support for user meta
-
+Store definitions across sessions
 
 ## Install
 
@@ -30,8 +29,6 @@ $ composer require getpop/definitionpersistence dev-master
     ...
 }
 ```
-
-([PoP](https://github.com/leoloso/PoP) must be installed)
 
 <!--
 ## Usage

@@ -1,7 +1,7 @@
 {
     "name": "getpop/definitionpersistence",
     "type": "library",
-    "description": "Adds support for user meta",
+    "description": "Store definitions across sessions",
     "keywords": [
         "PoP",
         "definitionpersistence"
