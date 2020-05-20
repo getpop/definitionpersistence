@@ -16,6 +16,15 @@ class Component extends AbstractComponent
     use YAMLServicesTrait;
     // const VERSION = '0.1.0';
 
+    public static function getDependedComponentClasses(): array
+    {
+        return [
+            \PoP\Definitions\Component::class,
+            \PoP\FileStore\Component::class,
+            \PoP\ComponentModel\Component::class,
+        ];
+    }
+
     public static function getBuildDir(): string
     {
         return dirname(__DIR__) . '/build';

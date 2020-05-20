@@ -1,2 +1,2 @@
 <?php
-\PoP\DefinitionPersistence\Component::init();
+//\PoP\DefinitionPersistence\Component::initialize();
