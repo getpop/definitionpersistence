@@ -20,12 +20,13 @@ Via Composer
 composer require getpop/definitionpersistence
 ```
 
-<!--
 ## Usage
 
+Initialize the component:
+
 ``` php
+\PoP\DefinitionPersistence\Component::initialize();
 ```
--->
 
 ## Standards
 
