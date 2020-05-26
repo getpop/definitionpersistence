@@ -25,7 +25,9 @@ composer require getpop/definitionpersistence
 Initialize the component:
 
 ``` php
-\PoP\DefinitionPersistence\Component::initialize();
+\PoP\Root\ComponentLoader::initializeComponents([
+    \PoP\DefinitionPersistence\Component::class,
+]);
 ```
 
 ## Standards
