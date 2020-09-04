@@ -19,8 +19,8 @@
     "prefer-stable": true,
     "require": {
         "php": "~7.2",
-        "getpop/definitions": "~0.1",
-        "getpop/filestore": "~0.1",
+        "getpop/definitions": "dev-master",
+        "getpop/filestore": "dev-master",
         "getpop/component-model": "dev-master"
     },
     "require-dev": {
