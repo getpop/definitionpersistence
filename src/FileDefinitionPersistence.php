@@ -10,8 +10,8 @@ use PoP\Definitions\AbstractDefinitionPersistence;
 
 class FileDefinitionPersistence extends AbstractDefinitionPersistence
 {
-    protected $file;
-    protected $fileStore;
+    protected FileStoreInterface $fileStore;
+    protected AbstractFile $file;
 
     public function __construct(
         FileStoreInterface $fileStore,
