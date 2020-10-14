@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace PoP\DefinitionPersistence\Config;
 
-use PoP\ComponentModel\Container\ContainerBuilderUtils;
+use PoP\Definitions\DefinitionManagerInterface;
 use PoP\Root\Component\PHPServiceConfigurationTrait;
+use PoP\ComponentModel\Container\ContainerBuilderUtils;
 
 class ServiceConfiguration
 {
@@ -15,7 +16,7 @@ class ServiceConfiguration
     {
         // Add ModuleFilter to the ModuleFilterManager
         ContainerBuilderUtils::injectServiceIntoService(
-            'definition_manager',
+            DefinitionManagerInterface::class,
             'file_definition_persistence',
             'setDefinitionPersistence'
         );

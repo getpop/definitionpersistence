@@ -1,10 +1,13 @@
 services:
+    _defaults:
+        public: true
+        autowire: true
     file_definition_persistence:
         class: \PoP\DefinitionPersistence\FileDefinitionPersistence
-        public: true
         arguments:
-            $fileStore: '@json_file_store'
+            # $fileStore: '@json_file_store'
             $file: '@definition_persistence_file'
 
     definition_persistence_file:
         class: \PoP\DefinitionPersistence\DefinitionPersistenceFile
+        public: false
