@@ -9,12 +9,12 @@ use PoP\DefinitionPersistence\Component;
 
 class DefinitionPersistenceFile extends AbstractFile
 {
-    public function getDir()
+    public function getDir(): string
     {
         return Component::getBuildDir();
     }
 
-    public function getFilename()
+    public function getFilename(): string
     {
         return 'definitions.json';
     }
