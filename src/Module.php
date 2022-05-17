@@ -4,35 +4,30 @@ declare(strict_types=1);
 
 namespace PoP\DefinitionPersistence;
 
-use PoP\Root\Component\AbstractComponent;
+use PoP\Root\Module\AbstractModule;
 
-/**
- * Initialize component
- */
-class Component extends AbstractComponent
+class Module extends AbstractModule
 {
     /**
-     * Classes from PoP components that must be initialized before this component
-     *
      * @return string[]
      */
-    public function getDependedComponentClasses(): array
+    public function getDependedModuleClasses(): array
     {
         return [
-            \PoP\Definitions\Component::class,
-            \PoP\FileStore\Component::class,
-            \PoP\ComponentModel\Component::class,
+            \PoP\Definitions\Module::class,
+            \PoP\FileStore\Module::class,
+            \PoP\ComponentModel\Module::class,
         ];
     }
 
     /**
      * Initialize services
      *
-     * @param string[] $skipSchemaComponentClasses
+     * @param string[] $skipSchemaModuleClasses
      */
     protected function initializeContainerServices(
         bool $skipSchema,
-        array $skipSchemaComponentClasses,
+        array $skipSchemaModuleClasses,
     ): void {
         $this->initServices(dirname(__DIR__));
     }
